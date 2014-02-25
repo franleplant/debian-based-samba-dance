@@ -69,3 +69,8 @@ Assuming that is your Guest machine's public IP, replace it with your own.
 
 Because Virtualization program shared folder don't play that well with Window's horrible file system, so when handling large code bases, say like a typical PHP project, the sync folder logic will make your Guest file system very slow, a typical site could take about 5 seconds to load with this config.
 If your host machine is Linux/Unix based you should definitively use sync/shared folder, it's easier to set and easier to use.
+
+
+## Ref
+
+http://askubuntu.com/questions/19361/cant-access-ubuntus-shared-folders-from-windows-7

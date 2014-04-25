@@ -61,14 +61,26 @@ writable = yes
 
 ### Connect
 
+Type:
 `Win + R`
 
+And inside the `run` box type:
 `\\192.163.1.102`
 
-Assuming that is your Guest machine's public IP, replace it with your own.
+> **IMPORTANT!:** Assuming that is your Guest machine's public IP, replace it with your own.
+
+> If you are using **Vagrant**, look for your `Vagrantfile`, open it and search for this line
+
+> `config.vm.network :private_network, ip: "192.168.33.10"`
+
+> Use that IP
 
 
+Now, windows will ask for credentials, type **{{USERNAME}}** and **{{PASSWORD}}**
 
+You should have access to your guest files from your host machine now.
+
+Enjoy!
 
 ## Why?
 

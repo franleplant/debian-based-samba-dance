@@ -47,7 +47,7 @@ At the end of the config append this
 
 ```bash
 [www]
-path = /var/www
+path = {{PATH_YOU_WANT_TO_SERVE}}
 available = yes
 valid users = {{USERNAME}}
 read only = no
@@ -56,6 +56,7 @@ public = yes
 writable = yes
 ```
 
+> **{{PATH_YOU_WANT_TO_SERVE}}** for example `/var/www`.
 
 
 ### Connect

@@ -4,9 +4,9 @@ Install Samba in Debian/Ubuntu
 Easy steps to set a Samba server in Debian/Ubuntu.
 This is my main setting to share files between a Vagrant managed guest on my Windows host.
 
-> {{SOME_NAME}} indicates a placeholder for real information.
+> **{{SOME_NAME}}** indicates a placeholder for real information.
 
-> For example: replace {{USERNAME}} for your desired username.
+> For example: replace **{{USERNAME}}** for your desired username.
 
 ## Instructions
 

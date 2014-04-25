@@ -4,6 +4,10 @@ Install Samba in Debian/Ubuntu
 Easy steps to set a Samba server in Debian/Ubuntu.
 This is my main setting to share files between a Vagrant managed guest on my Windows host.
 
+> {{SOME_NAME}} indicates a placeholder for real information.
+
+> For example: replace {{USERNAME}} for your desired username.
+
 ## Instructions
 
 ### Install Samba
@@ -15,13 +19,13 @@ sudo apt-get -y install samba
 ### Set Samba User
 
 ```bash
-sudo smbpasswd -a USERNAME
+sudo smbpasswd -a {{USERNAME}}
 ```
 
-It will prompt for a password, type
+It will prompt for a password, twice. Type
 
 ```bash
-PASSWORD
+{{PASSWORD}}
 ```
 
 ### Set Samba config
@@ -35,17 +39,17 @@ At the beginning of the config file change this to your PC's WORKGROUP
 
 ```bash
 [global]                 
-   workgroup = WORKGROUP 
+   workgroup = {{WORKGROUP}} 
 ```
 
 
-At the end of the confi append this
+At the end of the config append this
 
 ```bash
 [www]
 path = /var/www
 available = yes
-valid users = vagrant
+valid users = {{USERNAME}}
 read only = no
 browsable = yes
 public = yes
